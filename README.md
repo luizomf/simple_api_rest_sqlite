@@ -1,5 +1,7 @@
 # Uma API REST simples para consumo de dados
 
+Atenção: você precisa ter o NodeJS instalado no seu computador.  
+
 Para subir o projeto no ar com SQLite, copie o arquivo `.env_example` para `.env`.  
 
 Você também precisará adicionar uma secret key no arquivo `.env`:
