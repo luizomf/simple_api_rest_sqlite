@@ -1,0 +1,101 @@
+{
+  // VS Code
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+
+  "editor.fontFamily": "'Liga Droid Sans Mono'",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  "editor.fontLigatures": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.rulers": [
+      79,
+      120,
+  ],
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 18,
+
+  "debug.console.fontSize": 18,
+  "toggleFileEventLogging": true,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  // Auto fix on save
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true
+  },
+
+  // Terminal
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.shell.linux": "zsh",
+  "terminal.integrated.fontFamily": "'Fira Code'",
+  "terminal.integrated.fontSize": 18,
+
+  // Javascript & TypeScript
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+  },
+
+  "emmet.includeLanguages": {
+      "django-html": "html",
+      "javascript": "javascriptreact"
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  // Python
+  "python.linting.pylintArgs": [
+      "--load-plugins=pylint_django",
+      "--errors-only",
+  ],
+  "[python]": {
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true
+  },
+  "python.pythonPath": "/bin/python3.8",
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.testing.unittestEnabled": true,
+
+  // Django
+  "files.associations": {
+      "*.html": "html",
+      "**/templates/*.html": "django-html",
+      "**/templates/*": "django-txt",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+
+  // AutoDocstring extension
+  "autoDocstring.docstringFormat": "google",
+
+  // BracketPairColorizer extension
+  "bracketPairColorizer.showBracketsInGutter": true,
+
+  // Code runner extension
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+      "python": "python3.8 -u"
+  },
+}
