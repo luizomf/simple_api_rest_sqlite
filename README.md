@@ -88,15 +88,15 @@ Headers:
 ```
 Content-Type	application/json; charset=utf-8
 ```
-## endpoints
+# endpoints
 
 Os seguintes endpoints estão configurados:
 
-### Home - não há nada aqui
+## Home - não há nada aqui
 
 - `/` - GET
 
-### Usuários (users)
+## Usuários (users)
 
 - `/users` - DELETE - Apaga o usuário logado
 - `/users` - PUT - Atualiza o usuário logado
@@ -114,7 +114,7 @@ Os seguintes endpoints estão configurados:
 }
 ```
 
-### Tokens
+## Tokens
 
 - `/tokens` - POST - Obtém o token JWT
 
@@ -127,7 +127,7 @@ Os seguintes endpoints estão configurados:
 }
 ```
 
-### Aluno
+## Aluno
 
 - `/alunos/:id` - DELETE - Apaga o aluno do ID enviado
 - `/alunos/:id` - PUT - Atualiza o aluno do ID enviado
@@ -149,7 +149,7 @@ Os seguintes endpoints estão configurados:
 }
 ```
 
-### Fotos
+## Fotos
 
 Atenção aqui, esse é o único endpoint `multipart/form-data` para envio de arquivos.
 
