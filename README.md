@@ -88,3 +88,78 @@ Headers:
 ```
 Content-Type	application/json; charset=utf-8
 ```
+## endpoints
+
+Os seguintes endpoints estão configurados:
+
+### Home - não há nada aqui
+
+- `/` - GET
+
+### Usuários (users)
+
+- `/users` - DELETE - Apaga o usuário logado
+- `/users` - PUT - Atualiza o usuário logado
+- `/users` - POST - Cria um usuário
+- `/users/:id` - GET - Mostra o usuário do ID enviado (rota desativada)
+- `/users` - GET - Mostra todos os usuários (rota desativada)
+
+**Dados para usuários (JSON)**
+
+```
+{
+	"nome": "nome válido",
+	"password": "senha válida",
+	"email": "email_valido@email.com"
+}
+```
+
+### Tokens
+
+- `/tokens` - POST - Obtém o token JWT
+
+**Dados para tokens (JSON)**
+
+```
+{
+	"email": "admin@email.com",
+	"password": "123456"
+}
+```
+
+### Aluno
+
+- `/alunos/:id` - DELETE - Apaga o aluno do ID enviado
+- `/alunos/:id` - PUT - Atualiza o aluno do ID enviado
+- `/alunos` - POST - Cria um aluno
+- `/alunos/:id` - GET - Mostra o aluno do ID enviado
+- `/alunos` - GET - Mostra todos os alunos
+
+
+**Dados para tokens (JSON)**
+
+```
+{
+	"nome": "Nome",
+	"sobrenome": "Sobrenome",
+	"email": "email@email.com",
+	"idade": "50",
+	"peso": "80.04",
+	"altura": "1.90"
+}
+```
+
+### Fotos
+
+Atenção aqui, esse é o único endpoint `multipart/form-data` para envio de arquivos.
+
+- `/fotos` - POST - Recebe um arquivo de foto JPG ou PNG e um `aluno_id`.
+
+**Dados para fotos (multipart/form-data)**
+
+```
+{
+	"foto": (ARQUIVO.PNG|JPG),
+	"aluno_id": ":id"
+}
+```
